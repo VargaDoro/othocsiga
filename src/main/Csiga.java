@@ -6,8 +6,8 @@ public class Csiga {
     private static final Random RND = new Random();
     
     private String szin, megtettUt = "", szinKod;
-    boolean gyorsito = false;
-    private static final String ABRA = "@''";
+    private boolean gyorsito = false;
+    private static final String ABRA = "🐌";
     private static final char UTJEL_1 = '-' ;
     private static final char UTJEL_2 = '~' ;
     
@@ -41,5 +41,13 @@ public class Csiga {
 
     public String getSzinKod() {
         return szinKod;
+    }
+
+    public String getEmoji() {
+        return ABRA;  // Csiga emoji hozzáadása
+    }
+
+    public void setGyorsito(boolean gyorsito) {
+        this.gyorsito = gyorsito;
     }
 }
